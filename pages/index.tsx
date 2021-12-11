@@ -25,12 +25,13 @@ const Home: NextPage = () => {
             className="img-fluid rounded-pill"
             priority
           ></Image>
-          <div className="d-flex justify-content-center w-100 align-content-center">
+          <div className="d-flex justify-content-center w-100 text-center align-content-center">
             <div className="d-flex flex-column align-items-center">
-              <p className="display-1"> be distinct. </p> 
+              <p className="display-1"> be distinct. </p>
               <p className="display-1"> be yourself. </p>
-              <p className="fs-2 mt-5"> We are now available in Timisoara,</p>
-              <p className="fs-2">
+              <p className="fs-2 mt-5">
+                We are now available in Timisoara,
+                <br />
                 where you can enjoy the full experience of Sevegin.
               </p>
             </div>
@@ -45,15 +46,18 @@ const Home: NextPage = () => {
             className="img-fluid rounded-pill"
             priority
           ></Image>
-          <div className="d-flex justify-content-center w-100 align-content-center">
+          <div className="d-flex justify-content-center w-100 text-center align-content-center">
             <div className="d-flex flex-column align-items-center">
               <p className="display-1"> quality is our mission. </p>
               <p className="fs-2 mt-5"> </p>
-              <p className="fs-2">Our dedicated department for quality <br/> will ensure the best customer experience. </p>
+              <p className="fs-2">
+                Our dedicated department for quality <br /> will ensure the best
+                customer experience.{" "}
+              </p>
             </div>
           </div>
         </div>
-      <div className="d-flex flex-column-reverse flex-md-row align-items-center div100">
+        <div className="d-flex flex-column-reverse flex-md-row align-items-center div100">
           <Image
             src="/Women_clothes.webp"
             height={pictureHeight}
@@ -62,11 +66,14 @@ const Home: NextPage = () => {
             className="img-fluid rounded-pill"
             priority
           ></Image>
-         <div className="d-flex justify-content-center w-100 align-content-center">
+          <div className="d-flex justify-content-center w-100 text-center align-content-center">
             <div className="d-flex flex-column align-items-center ms-5">
               <p className="display-1"> explore. </p>
               <p className="fs-2 mt-5"> </p>
-              <p className="fs-2">visit our shop page to discover<br/> a multitude of products</p>
+              <p className="fs-2">
+                visit our shop page to discover
+                <br /> a multitude of products
+              </p>
             </div>
           </div>
         </div>

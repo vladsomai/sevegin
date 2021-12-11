@@ -1,9 +1,15 @@
 import type { NextPage } from "next";
 import Image from "next/image";
+import Head from "next/head";
 
 const Signin: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>Sign in</title>
+        <meta name="Sevegin" content="E-Commerce website by Vlad Somai" />
+        <link rel="icon" href="/logo.ico" />
+      </Head>
       <div className="d-flex flex-column">
         <div className="d-flex flex-column flex-md-row align-items-center justify-content-around">
           <Image
@@ -61,10 +67,7 @@ const Signin: NextPage = () => {
           priority
         ></Image>
 
-        <p className="display-4 text-center">
-          {" "}
-          Dont have an account yet?
-        </p>
+        <p className="display-4 text-center"> Dont have an account yet?</p>
         <button className="btn btn-success fs-2">Register here!</button>
       </div>
     </>

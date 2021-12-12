@@ -18,7 +18,7 @@ const Card = ({
 }: CardProperties) => {
   return (
     <>
-      <button className="btn border">
+      <button className="btn border shadowCard">
         <p className="display-4 text-center">{displayText}</p>
         <Image
           src={picturePath}

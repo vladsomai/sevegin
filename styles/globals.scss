@@ -1,31 +1,29 @@
-
-$primary:#350d38;
+$primary: #350d38;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-
+@import "animate.css";
 
 html,
 body {
   background-image: url("../public/background.webp");
   background-size: cover;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
-.div80{
-height: 80vh;
+.div80 {
+  height: 80vh;
 }
 
-.card33Width
-{
+.card33Width {
   width: 25vw;
 }
-.div10{
+.div10 {
   height: 10vh;
 }
-.padding-t100{
+.padding-t100 {
   padding-top: 100px;
 }
-.div100{
+.div100 {
   padding-top: 100px;
   height: 100vh;
   max-width: 100vw;
@@ -44,6 +42,44 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #1c2231;
-  outline: 1px solid #350d38
-  ;
+  outline: 1px solid #350d38;
+}
+
+.shadowCard {
+  box-shadow: 10px 10px 8px #888888;
+  transition: all 0.2s linear;
+}
+
+.shadowCard:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.slowScale {
+  transition: all 0.2s linear;
+}
+
+.slowScale:hover {
+  transform: scale(1.02, 1.02);
+}
+
+.beDistinct {
+  animation: slideInDown;
+  animation-duration: 1s;
+}
+
+.beYourself {
+  visibility: hidden;
+  animation-name: addVis, slideInRight;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes addVis {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }

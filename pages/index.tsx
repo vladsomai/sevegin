@@ -22,13 +22,13 @@ const Home: NextPage = () => {
             height={pictureHeight}
             width={pictureWidth}
             alt="card"
-            className="img-fluid rounded-pill"
+            className="img-fluid rounded-pill shadowCard"
             priority
           ></Image>
           <div className="d-flex justify-content-center w-100 text-center align-content-center">
             <div className="d-flex flex-column align-items-center">
-              <p className="display-1"> be distinct. </p>
-              <p className="display-1"> be yourself. </p>
+              <p className="display-1 beDistinct"> be distinct. </p>
+              <p className="display-1 beYourself"> be yourself. </p>
               <p className="fs-2 mt-5">
                 We are now available in Timisoara,
                 <br />
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
             height={pictureHeight}
             width={pictureWidth}
             alt="card"
-            className="img-fluid rounded-pill"
+            className="img-fluid rounded-pill shadowCard"
             priority
           ></Image>
           <div className="d-flex justify-content-center w-100 text-center align-content-center">
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
             height={pictureHeight}
             width={pictureWidth}
             alt="card"
-            className="img-fluid rounded-pill"
+            className="img-fluid rounded-pill shadowCard"
             priority
           ></Image>
           <div className="d-flex justify-content-center w-100 text-center align-content-center">
@@ -72,7 +72,7 @@ const Home: NextPage = () => {
               <p className="fs-2 mt-5"> </p>
               <p className="fs-2">
                 visit our shop page to discover
-                <br /> a multitude of products
+                <br /> a multitude of products.
               </p>
             </div>
           </div>

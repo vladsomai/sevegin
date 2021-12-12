@@ -9,11 +9,11 @@ const Layout: any = ({ children }: any) => {
       <div className="container">{children}</div>
       <nav className="w-100 bg-primary d-flex justify-content-around text-light position-fixed top-0">
         <Link href="/" passHref>
-          <button className="btn btn-primary fs-1 m-0 flex-md-grow-1">Sevegin</button>
+          <button className="btn btn-primary fs-1 m-0 flex-md-grow-1 slowScale">Sevegin</button>
         </Link>
         <div className="d-flex d-md-none justify-content-center">
           <Link href="/" passHref>
-            <button className="btn btn-primary fs-1 p-1 m-1">
+            <button className="btn btn-primary fs-1 p-1 m-1 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -31,13 +31,13 @@ const Layout: any = ({ children }: any) => {
         <div className="d-flex flex-row flex-grow-1 d-none d-md-block ">
           <ul className="d-flex flex-row flex-grow-1 justify-content-around list-unstyled p-1 m-1">
             <Link href="/" passHref>
-              <button className="btn btn-primary fs-1 m-0">Home</button>
+              <button className="btn btn-primary fs-1 m-0 slowScale">Home</button>
             </Link>
             <Link href="/shop" passHref>
-              <button className="btn btn-primary fs-1 m-0">Shop</button>
+              <button className="btn btn-primary fs-1 m-0 slowScale">Shop</button>
             </Link>
             <Link href="/signin" passHref>
-              <button className="btn btn-primary fs-1 m-0">Sign in</button>
+              <button className="btn btn-primary fs-1 m-0 slowScale">Sign in</button>
             </Link>
           </ul>
         </div>

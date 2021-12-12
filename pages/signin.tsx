@@ -42,7 +42,7 @@ const Signin: NextPage = () => {
                 aria-label="Password"
                 required
               ></input>
-              <button type="submit" className="btn btn-primary fw-bold fs-2">
+              <button type="submit" className="btn btn-primary fw-bold fs-2 slowScale">
                 Sign in
               </button>
             </form>
@@ -53,7 +53,7 @@ const Signin: NextPage = () => {
           <p className="display-4">
             Or you can sign in with your favourite provider!
           </p>
-          <button className="btn btn-danger fs-2">Sign in with Google</button>
+          <button className="btn btn-danger fs-2 slowScale">Sign in with Google</button>
         </div>
       </div>
 
@@ -68,7 +68,7 @@ const Signin: NextPage = () => {
         ></Image>
 
         <p className="display-4 text-center"> Dont have an account yet?</p>
-        <button className="btn btn-success fs-2">Register here!</button>
+        <button className="btn btn-success fs-2 slowScale">Register here!</button>
       </div>
     </>
   );

@@ -12,7 +12,6 @@ const Home: NextPage = () => {
       <Head>
         <title>Sevegin</title>
         <meta name="Sevegin" content="E-Commerce website by Vlad Somai" />
-        <link rel="icon" href="/logo.ico" />
       </Head>
 
       <div className="d-flex flex-column justify-content-around">
@@ -22,13 +21,13 @@ const Home: NextPage = () => {
             height={pictureHeight}
             width={pictureWidth}
             alt="card"
-            className="img-fluid rounded-pill shadowCard"
+            className="img-fluid rounded-pill shadowCard p-1"
             priority
           ></Image>
-          <div className="d-flex justify-content-center w-100 text-center align-content-center">
+          <div className="d-flex justify-content-center text-center align-content-center">
             <div className="d-flex flex-column align-items-center">
-              <p className="display-1 beDistinct"> be distinct. </p>
-              <p className="display-1 beYourself"> be yourself. </p>
+              <p className="display-2 beDistinct"> be distinct. </p>
+              <p className="display-2 beYourself"> be yourself. </p>
               <p className="fs-2 mt-5">
                 We are now available in Timisoara,
                 <br />
@@ -43,7 +42,7 @@ const Home: NextPage = () => {
             height={pictureHeight}
             width={pictureWidth}
             alt="card"
-            className="img-fluid rounded-pill shadowCard"
+            className="img-fluid rounded-pill shadowCard p-1"
             priority
           ></Image>
           <div className="d-flex justify-content-center w-100 text-center align-content-center">
@@ -63,7 +62,7 @@ const Home: NextPage = () => {
             height={pictureHeight}
             width={pictureWidth}
             alt="card"
-            className="img-fluid rounded-pill shadowCard"
+            className="img-fluid rounded-pill shadowCard p-1"
             priority
           ></Image>
           <div className="d-flex justify-content-center w-100 text-center align-content-center">

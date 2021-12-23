@@ -63,15 +63,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 .beDistinct {
-  animation: slideInDown;
+  visibility: hidden;
+  animation: addVis, slideInDown;
+  animation-delay: 1s;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .beYourself {
   visibility: hidden;
   animation-name: addVis, slideInRight;
   animation-duration: 1s;
-  animation-delay: 1s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 

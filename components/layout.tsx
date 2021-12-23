@@ -7,6 +7,7 @@ const Layout: any = ({ children }: any) => {
   return (
     <>
       <div className="container">{children}</div>
+ 
       <nav className="w-100 bg-primary d-flex justify-content-around text-light position-fixed top-0">
         <Link href="/" passHref>
           <button className="btn btn-primary fs-1 m-0 flex-md-grow-1 slowScale">Sevegin</button>

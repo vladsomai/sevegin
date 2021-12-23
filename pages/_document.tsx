@@ -14,7 +14,7 @@ class MyDocument extends Document {
             content="Store"
             name="Sevegin"
           />
-          <link rel="shortcut icon" href="/images/logo.ico" />
+          <link rel="icon" href="/logo.ico" />
 
           <link
             href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"

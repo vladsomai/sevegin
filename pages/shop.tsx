@@ -8,8 +8,6 @@ const Shop: NextPage = () => {
     <>
       <Head>
         <title>Shop</title>
-        <meta name="Sevegin" content="E-Commerce website by Vlad Somai" />
-        <link rel="icon" href="/logo.ico" />
       </Head>
       <div className=" d-flex flex-column flex-md-row justify-content-between mb-5 padding-t100">
         <div className="d-flex flex-column text-center">

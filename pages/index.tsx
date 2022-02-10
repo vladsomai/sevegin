@@ -2,16 +2,21 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/layout";
-
-const pictureHeight = 1080;
-const pictureWidth = 800;
+import { useEffect, useState } from "react";
 
 const Home: NextPage = () => {
+  const [pictureHeight, setPictureHeight] = useState(0);
+  const [pictureWidth, setPictureWidth] = useState(0);
+
+  useEffect(() => {
+    setPictureHeight(window.innerHeight);
+    setPictureWidth(window.innerWidth/2);
+  }, []);
+
   return (
     <>
       <Head>
         <title>Sevegin</title>
-        <meta name="Sevegin" content="E-Commerce website by Vlad Somai" />
       </Head>
 
       <div className="d-flex flex-column justify-content-around">
@@ -24,7 +29,7 @@ const Home: NextPage = () => {
             className="img-fluid rounded-pill shadowCard p-1"
             priority
           ></Image>
-          <div className="d-flex justify-content-center text-center align-content-center">
+          <div className="d-flex justify-content-center text-center w-100 align-content-center">
             <div className="d-flex flex-column align-items-center">
               <p className="display-2 beDistinct"> be distinct. </p>
               <p className="display-2 beYourself"> be yourself. </p>

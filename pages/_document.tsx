@@ -14,6 +14,8 @@ class MyDocument extends Document {
             content="Store"
             name="Sevegin"
           />
+          <meta name="Sevegin" content="E-Commerce website by Vlad Somai" />
+
           <link rel="icon" href="/logo.ico" />
 
           <link

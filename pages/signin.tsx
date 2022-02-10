@@ -1,21 +1,28 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Head from "next/head";
+import { useEffect, useState } from "react";
 
 const Signin: NextPage = () => {
+  const [pictureHeight, setPictureHeight] = useState(0);
+  const [pictureWidth, setPictureWidth] = useState(0);
+
+  useEffect(() => {
+    setPictureHeight(window.innerHeight);
+    setPictureWidth(window.innerWidth / 3);
+  }, []);
+
   return (
     <>
       <Head>
         <title>Sign in</title>
-        <meta name="Sevegin" content="E-Commerce website by Vlad Somai" />
-        <link rel="icon" href="/logo.ico" />
       </Head>
       <div className="d-flex flex-column">
-        <div className="d-flex flex-column flex-md-row align-items-center justify-content-around">
+        <div className="d-flex flex-column flex-md-row align-items-center justify-content-around div100">
           <Image
             src="/undraw_authentication_fsn5.svg"
-            height={720}
-            width={720}
+            height={pictureHeight}
+            width={pictureWidth}
             alt="auth"
             className="img-fluid"
             priority
@@ -42,7 +49,10 @@ const Signin: NextPage = () => {
                 aria-label="Password"
                 required
               ></input>
-              <button type="submit" className="btn btn-primary fw-bold fs-2 slowScale">
+              <button
+                type="submit"
+                className="btn btn-primary fw-bold fs-2 slowScale"
+              >
                 Sign in
               </button>
             </form>
@@ -53,22 +63,26 @@ const Signin: NextPage = () => {
           <p className="display-4">
             Or you can sign in with your favourite provider!
           </p>
-          <button className="btn btn-danger fs-2 slowScale">Sign in with Google</button>
+          <button className="btn btn-danger fs-2 slowScale">
+            Sign in with Google
+          </button>
         </div>
       </div>
 
       <div className="d-flex flex-column align-items-center justify-content-center flex-grow-1 div100">
         <Image
           src="/register.svg"
-          height={1080}
-          width={720}
+          height={pictureHeight}
+          width={pictureWidth}
           alt="auth"
           className="img-fluid"
           priority
         ></Image>
 
         <p className="display-4 text-center"> Dont have an account yet?</p>
-        <button className="btn btn-success fs-2 slowScale">Register here!</button>
+        <button className="btn btn-success fs-2 slowScale">
+          Register here!
+        </button>
       </div>
     </>
   );
